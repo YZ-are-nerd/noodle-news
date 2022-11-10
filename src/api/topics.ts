@@ -1,0 +1,16 @@
+export const topics = [
+    {title: 'Последние', topic: 'news'},
+    {title: 'Спорт', topic: 'sport'},
+    {title: 'Технологии', topic: 'tech'},
+    {title: 'Мир', topic: 'world'},
+    {title: 'Финансы', topic: 'finance'},
+    {title: 'Политика', topic: 'politics'},
+    {title: 'Бизнес', topic: 'business'},
+    {title: 'Экономика', topic: 'economics'},
+    {title: 'Развлечения', topic: 'entertainment'},
+    {title: 'Красота', topic: 'beauty'},
+    {title: 'Путешествия', topic: 'travel'},
+    {title: 'Музыка', topic: 'music'},
+    {title: 'Еда', topic: 'food'},
+    {title: 'Наука', topic: 'science'},
+]

@@ -1,0 +1,38 @@
+{
+  "name": "noodle-news",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.3",
+    "firebase": "^9.9.4",
+    "framer-motion": "^7.3.2",
+    "lodash": "^4.17.21",
+    "luxon": "^3.0.3",
+    "mobx-react": "^7.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0",
+    "react-use": "^17.4.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.185",
+    "@types/luxon": "^3.0.1",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "autoprefixer": "^10.4.9",
+    "mobx": "^6.6.2",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.2.1",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3"
+  }
+  
+}
