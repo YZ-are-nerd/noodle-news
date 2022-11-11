@@ -61,7 +61,7 @@ const App = () => {
                 <motion.input layoutId="searchInp" value={search} 
                 onChange={e => setSearch(e.target.value)} type="text" 
                 placeholder="Поиск..." className="w-64 p-2 hidden lg:inline text-sm rounded-xl text-white bg-neutral-900" />
-                <button onClick={() => navigate('/search')} className={btn.btn_neutral_sm + ' p-2'}><BiSearch size={20}/></button>
+                <button onClick={() => navigate('/search')} className={btn.btn_neutral_sm + ' p-2 inline lg:hidden'}><BiSearch size={20}/></button>
               </>
             }
           </div>
