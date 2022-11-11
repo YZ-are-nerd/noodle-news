@@ -13,7 +13,6 @@ const TopicPage = () => {
     const topicsList = topics
     const navigate = useNavigate()
     useEffect(() => {
-        console.log(topicStore.topicData, params.id);
         setLoading(true)
         if (!topicStore.topicData) {
             const indexTopic = topicsList.findIndex((topic) => topic.topic === params.id!)

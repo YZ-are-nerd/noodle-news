@@ -13,6 +13,9 @@
     body {
         @apply bg-black
     }
+    input {
+        @apply outline-none
+    }
     a {
         @apply text-sm text-blue-500 
     }

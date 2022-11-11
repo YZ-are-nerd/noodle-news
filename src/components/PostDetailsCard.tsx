@@ -28,6 +28,7 @@ const PostDetailsCard = () => {
                         <div className="w-full h-fit p-2 flex flex-col gap-2">
                             <h4>{postStore.postData.title}</h4>
                             <p>{postStore.postData.summary}</p>
+                            <a target='_blank' href={postStore.postData.link}>Перейти</a>
                             <div className="w-full h-0.5 rounded-xl bg-neutral-800"/>
                             <div className="w-full h-fit flex items-center justify-between gap-2">
                                 <div className="w-fit flex items-center gap-2">
