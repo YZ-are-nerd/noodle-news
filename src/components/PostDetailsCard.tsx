@@ -27,16 +27,16 @@ const PostDetailsCard = () => {
                         }
                         <div className="w-full h-fit p-2 flex flex-col gap-2">
                             <h4>{postStore.postData.title}</h4>
-                            <p>{postStore.postData.summary}</p>
+                            <p>{DateTime.fromSQL(postStore.postData.published_date).toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY)}</p>
+                            <p className="w-full h-fit">{postStore.postData.summary}</p>
                             <a target='_blank' href={postStore.postData.link}>Перейти</a>
                             <div className="w-full h-0.5 rounded-xl bg-neutral-800"/>
                             <div className="w-full h-fit flex items-center justify-between gap-2">
                                 <div className="w-fit flex items-center gap-2">
                                     <h6>{postStore.postData.author}</h6>
-                                    <p>{DateTime.fromSQL(postStore.postData.published_date).toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY)}</p>
                                 </div>
                                 <div className="w-fit flex items-center gap-2">
-                                    <p>Источник:</p>
+                                    <p className="hidden lg:inline">Источник:</p>
                                     <a href={postStore.postData.rights}>{postStore.postData.rights}</a>
                                 </div>
                             </div>

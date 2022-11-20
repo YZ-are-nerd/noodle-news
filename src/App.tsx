@@ -53,8 +53,7 @@ const App = () => {
       <AnimatePresence initial={false} key='root'>
         <nav key='nav' ref={navref} id="nav" className="w-full h-fit mb-4 gap-2 py-3 pb-0 lg:px-0 px-3 flex flex-col bg-black">
           <div className="w-full lg:w-2/3 h-fit mx-auto flex items-center justify-between">
-            <h2 onClick={() => navigate('/')}>Noodle News</h2>
-            {/* <button className={btn.btn_neutral}><FcGoogle size={20}/>Войти</button> */}
+            <img onClick={() => navigate('/')} className='w-10 h-10' src="/pool/x36/pool_primary.svg" alt="" />
             {
               !isHide &&
               <>
@@ -87,12 +86,12 @@ const App = () => {
         }
         {
           !inView &&
-          <a href="#nav" className={btn.btn_primary_sm + ' p-1 fixed bottom-3 right-3'}><BiChevronUp size={20}/></a>
+          <a href="#nav" className={btn.btn_primary_sm + ' p-1 z-10 fixed bottom-3 right-3'}><BiChevronUp size={20}/></a>
         }
         <footer key='footer' className="w-full h-fit p-2 flex flex-col rounded-t-xl gap-2 bg-neutral-900">
           <div className="w-full h-fit flex items-center justify-between">
-            <h4>Noodle News</h4>
-            <a target='_blank' href="#">Также от Noodle</a>
+            <img className='w-10 h-10' src="/pool/x36/pool_primary.svg" alt="" />
+            <a target='_blank' href="#">Также от Pool</a>
           </div>
           <div ref={footerRef} className="w-full h-fit py-2 flex items-center">
             <motion.div drag='x' dragConstraints={footerRef}  className="w-fit h-fit flex items-center gap-2">
