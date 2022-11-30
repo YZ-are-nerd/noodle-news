@@ -20,7 +20,7 @@ const PostDetailsCard = () => {
                 className="w-full md:w-1/2 lg:w-1/3 h-fit p-2 rounded-xl flex flex-col gap-2">
                     <motion.article 
                     onClick={e => e.stopPropagation()} 
-                    layoutId={postStore.postData._id} className='w-full h-fit flex flex-col cursor-pointer rounded-xl bg-neutral-900'>
+                    layoutId={postStore.postData._id} className='w-full h-fit max-h-screen flex flex-col cursor-pointer rounded-xl bg-neutral-900'>
                         {
                             postStore.postData.media !== 'http://trud-ost.ru/wp-content/themes/NewsReport/images/favicon.png' &&
                             <img loading='lazy' draggable={false} className='w-full h-fit rounded-xl object-cover' src={postStore.postData.media} alt="" />
@@ -28,7 +28,9 @@ const PostDetailsCard = () => {
                         <div className="w-full h-fit p-2 flex flex-col gap-2">
                             <h4>{postStore.postData.title}</h4>
                             <p>{DateTime.fromSQL(postStore.postData.published_date).toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY)}</p>
-                            <p className="w-full h-fit">{postStore.postData.summary}</p>
+                            <div className="w-full max-h-40 h-fit overflow-y-auto">
+                                <p className="w-full h-fit">{postStore.postData.summary}</p>
+                            </div>
                             <a target='_blank' href={postStore.postData.link}>Перейти</a>
                             <div className="w-full h-0.5 rounded-xl bg-neutral-800"/>
                             <div className="w-full h-fit flex items-center justify-between gap-2">
